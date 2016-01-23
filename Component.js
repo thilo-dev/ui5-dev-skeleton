@@ -10,32 +10,7 @@ sap.ui.define([
         return UIComponent.extend("ui5.dev.Component", {
 
             metadata : {
-
-                rootView : "ui5.dev.view.App",
-
-                /* routing : {
-                    config : {
-                        routerClass : Router,
-                        viewType : "XML",
-                        viewPath : "ui5.memory.view",
-                        controlId: "idAppControl"
-                    },
-                    routes : [
-                        {
-                            pattern: "",
-                            name: "Home",
-                            target: ["home"]
-                        }
-                    ],
-                    targets: {
-                        "home" : {
-                            viewName : "Home",
-                            viewLevel : 1,
-                            controlAggregation : ""
-                        }
-                    }
-                }
-                */
+                manifest : "json"
             },
 
             init : function () {
