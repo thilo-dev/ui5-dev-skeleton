@@ -1,0 +1,7 @@
+<mvc:View
+  controllerName="ui5.dev.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Text text="I am Home"/>
+
+</mvc:View>

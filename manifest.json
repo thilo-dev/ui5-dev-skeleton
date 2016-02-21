@@ -72,14 +72,19 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "viewPath": "ui5.dev.view",
-        "controlId": "app",
+        "controlId": "idAppControl",
         "controlAggregation": "pages",
         "bypassed": {
           "target": "notFound"
         }
       },
 
-      "routes": [],
+      "routes": [
+        {
+          "pattern" : "",
+          "viewName" : "Home",
+          "viewId" : "home"
+        }],
 
       "targets": {
         "notFound": {
