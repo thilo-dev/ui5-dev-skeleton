@@ -14,11 +14,12 @@ sap.ui.define([
             },
 
             init : function () {
+
                 var deviceModel = new JSONModel(Device);
                 deviceModel.setDefaultBindingMode("OneWay");
                 this.setModel(deviceModel, "device");
                 UIComponent.prototype.init.apply(this, arguments);
-                // this.getRouter().initialize();
+                this.getRouter().initialize();
             }
         });
 
