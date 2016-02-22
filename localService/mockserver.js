@@ -9,9 +9,13 @@ function(MockServer){
       oMockServer = new MockServer({
         rootUri : "some/service/uri"
       });
-      sService = jQuery.sap.getModulePath("ui5/dev/localService/" + sService +  "/metadata", ".xml")
+
+      var sMockDataPath = "./localservice/" + sService +"/mockdata"
+      sService = jQuery.sap.getModulePath("ui5/dev/localService/" + sService +  "/metadata", ".xml");
+      debugger;
       //sService = "/localService/" + sService + "/metadata.xml";
       oMockServer.simulate(sService, {
+        sMockdataBaseUrl : sMockDataPath,
         bGenerateMissingMockData : true
       });
 
