@@ -19,6 +19,10 @@ sap.ui.define([
                 deviceModel.setDefaultBindingMode("OneWay");
                 this.setModel(deviceModel, "device");
                 UIComponent.prototype.init.apply(this, arguments);
+								var oModel = new sap.ui.model.odata.v2.ODataModel("V2/Northwind/Northwind.svc/");
+								this.setModel(oModel);
+
+
                 this.getRouter().initialize();
             }
         });
